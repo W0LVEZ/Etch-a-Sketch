@@ -1,0 +1,31 @@
+body{
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#sketchPad {
+    margin: 0;
+    padding: 0;
+    height: 70vh;
+    width: 70vh;
+    border: 10px solid black;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.square {
+    margin: 0;
+    padding: 0;
+    height: auto;
+    width: auto;
+    border: 1px solid black;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
