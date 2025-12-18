@@ -7,12 +7,22 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <div id="title"><h1>Etch-a-Sketch</h1></div>
-        <div id="sketchPad"></div>
-        <button id="resizeBtn">Resize Grid</button>
+    <div class="flex-container">
+        <div class="title"><h1>Etch-a-Sketch</h1></div>
+        <div class="content">
+            <div class="board"></div>
+            <div class="buttons">
+                <button>Black</button>
+                <button>White</button>
+                <button>Random</button>
+                <button>Reset</button>
+            </div>
+            <div>
+                <input type="text" placeholder="Size of Board" value="16" onchange="changeSize(this.value)" />
+                <button>Set Size</button>
+            </div>
+        </div>
     </div>
-
-    <script src="script.js"></script>
 </body>
+<script src="script.js"></script>
 </html>

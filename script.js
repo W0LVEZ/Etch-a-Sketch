@@ -1,6 +1,16 @@
-const container = document.getElementById('sketchPad');
-for (let i = 0; i < 256; i++) {
-    const square = document.createElement('div');
-    square.classList.add('square');
-    container.appendChild(square);   
+function makeBoard(size) {
+    let board = document.querySelector(".board");
+    board.style.gridTemplateColumns = `repeat(${size}, 1fr)`;
+    board.style.gridTemplateRows = `repeat(${size}, 1fr)`;
+
+    for (let i = 0; i < 256; i++) {
+        let square = document.createElement("div");
+        square.style.backgroundColor = "blue";
+        board.insertAdjacentElement("beforeend", square);   
+    }
 }
+
+function changeSize(input) {
+    makeBoard(input);
+}
+
